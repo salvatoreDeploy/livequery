@@ -8,6 +8,13 @@
       "when": 1752010282630,
       "tag": "0000_young_calypso",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752079909905,
+      "tag": "0001_cold_mercury",
+      "breakpoints": true
     }
   ]
 }
