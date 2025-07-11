@@ -26,10 +26,22 @@ Content-Type: application/json
 
 ###
 
-@roomId = {{getRooms.response.body.$.[0].id}}
+@roomId = {{createRoom.response.body.$.roomId}}
 
 ###
 
 # Get room questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+###
+
+# Create a new question
+# @name createQuestion
+POST  {{baseUrl}}/rooms/{{roomId}}/question
+Accept: application/json
+Content-Type: application/json
+
+{
+  "question": "Qual o conceito de RAG"
+}
