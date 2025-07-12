@@ -7,9 +7,9 @@ type RoomParams = {
 export function Room() {
   const params = useParams<RoomParams>();
 
-  if (!params.roomId) {
+  if (!params) {
     return <Navigate replace to="/" />;
   }
 
-  return <div>Room details {JSON.stringify(params.roomId)}</div>;
+  return <div>Room details {JSON.stringify(params)}</div>;
 }
