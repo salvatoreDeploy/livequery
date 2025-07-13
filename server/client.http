@@ -38,10 +38,10 @@ GET {{baseUrl}}/rooms/{{roomId}}/questions
 
 # Create a new question
 # @name createQuestion
-POST  {{baseUrl}}/rooms/{{roomId}}/question
+POST  {{baseUrl}}/rooms/0e63cc4e-1105-47b4-b6f1-516c52dfe215/question
 Accept: application/json
 Content-Type: application/json
 
 {
-  "question": "Qual o conceito de RAG"
+  "question": "O que é Angular e Vue.JS?"
 }

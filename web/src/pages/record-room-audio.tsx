@@ -43,7 +43,9 @@ export function RecordRoomAudio() {
       }
     );
 
-    return response.formData;
+    await response.json();
+
+    // console.log(result);
   }
 
   async function startRecording() {

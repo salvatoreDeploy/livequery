@@ -15,6 +15,13 @@
       "when": 1752079909905,
       "tag": "0001_cold_mercury",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752431985484,
+      "tag": "0002_naive_golden_guardian",
+      "breakpoints": true
     }
   ]
 }
