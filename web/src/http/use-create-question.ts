@@ -39,6 +39,7 @@ export function useCreateQuestion(roomId: string) {
         question,
         answer: null,
         createdAt: new Date().toISOString(),
+        isGenerationAnswer: true
       };
 
       queryClient.setQueryData<GetRoomQuestionsAPIResponse>(
@@ -62,7 +63,7 @@ export function useCreateQuestion(roomId: string) {
 
             return questions.map(question => {
               if(question.id === context.newQuestion.id){
-                return {...context.newQuestion, id: data.questionId, answer: data.answer}
+                return {...context.newQuestion, id: data.questionId, answer: data.answer, isGenerationAnswer: false}
               }
 
               return question
